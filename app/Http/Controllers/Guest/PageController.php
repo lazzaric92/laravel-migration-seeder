@@ -10,7 +10,7 @@ use App\Models\Train;
 class PageController extends Controller
 {
     public function index(){
-        $trains = Train::all();
+        $trains = Train::where('date', date("Y/m/d"))->get();
         return view('guest.pages.home', compact('trains'));
     }
 }
