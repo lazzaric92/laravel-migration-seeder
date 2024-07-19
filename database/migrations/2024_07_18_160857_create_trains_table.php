@@ -12,15 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('trains', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->string('company', 255);
             $table->string('departure_station', 255);
             $table->string('arrival_station', 255);
-            $table->time('departure_time');
-            $table->time('arrival_time');
-            $table->string('train_code', 50);
+            $table->dateTime('departure_time');
+            $table->dateTime('arrival_time');
+            $table->string('train_code', 10);
             $table->tinyInteger('no_carriages')->unsigned();
-            $table->boolean('onTime');
+            $table->boolean('on_time');
             $table->boolean('cancelled');
             $table->timestamps();
         });

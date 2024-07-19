@@ -15,7 +15,6 @@
                     <th scope="col">Company</th>
                     <th scope="col">Depart from</th>
                     <th scope="col">Arrive to</th>
-                    <th scope="col">Date</th>
                     <th scope="col">Depart at</th>
                     <th scope="col">Arrive at</th>
                     <th scope="col">Train code</th>
@@ -31,7 +30,6 @@
                     <td scope="col">{{$train->company}}</td>
                     <td scope="col">{{$train->departure_station}}</td>
                     <td scope="col">{{$train->arrival_station}}</td>
-                    <td scope="col">{{$train->date}}</td>
                     <td scope="col">{{$train->departure_time}}</td>
                     <td scope="col">{{$train->arrival_time}}</td>
                     <td scope="col">{{$train->train_code}}</td>
