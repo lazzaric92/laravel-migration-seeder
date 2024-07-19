@@ -3,7 +3,7 @@
 @section('page-title', 'Trains')
 
 @section('main-content')
-    <h1 class="p-3 fw-bold text-center">
+    <h1 class="p-3 fw-bold text-center text-danger">
         Trains
     </h1>
 
